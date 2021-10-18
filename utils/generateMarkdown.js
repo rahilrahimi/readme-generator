@@ -34,13 +34,13 @@ function generateMarkdown(data) {
 
 `;
 }
-function generateMarkdown(fileName, data) {
-  FileSystem.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (err) =>{
-    if(err) {
-      console.log(err)
-    }
-    console.log('Your README has been generated');
-  })
-}
+// function generateMarkdown(fileName, data) {
+//   FileSystem.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (err) =>{
+//     if(err) {
+//       console.log(err)
+//     }
+//     console.log('Your README has been generated');
+//   })
+// }
 
 module.exports = generateMarkdown;

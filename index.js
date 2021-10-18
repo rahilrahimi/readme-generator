@@ -56,8 +56,8 @@ const questions = [{
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
-  let markdownfile = generateMarkdown(answers);
- return fs.writeToFileSync("README_final.md", markdownfile, (error) => error? console.log(error): console.log("writen file"))
+  let markdownfile = generateMarkdown(data);
+ return fs.writeToFileSync(fileName, markdownfile, (error) => error? console.log(error): console.log("writen file"))
  }
 
 // TODO: Create a function to initialize app
@@ -67,10 +67,11 @@ function init() {
     .then((answers) => {
       console.log(answers)
       console.log(answers.title)
-      writeFile("README_final.md", markdownfile, (error) => error? console.log(error): console.log("writen file"));
+      writeFile("README_final.md", answers);
       //call function to creat markdown file and give answers as a parameter
       // let markdownfile = generateMarkdown(answers);
       // fs.writeToFile("README_final.md", markdownfile, (error) => error? console.log(error): console.log("writen file"))
+      console.log("writen file")
     })
     .catch((error) => {
       if (error.isTtyError) {
