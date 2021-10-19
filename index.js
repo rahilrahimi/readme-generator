@@ -57,7 +57,7 @@ const questions = [{
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
   let markdownfile = generateMarkdown(data);
- return fs.writeToFileSync(fileName, markdownfile, (error) => error? console.log(error): console.log("writen file"))
+ return fs.writeFileSync(fileName, markdownfile, (error) => error? console.log(error): console.log("writen file"))
  }
 
 // TODO: Create a function to initialize app
