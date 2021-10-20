@@ -13,6 +13,11 @@ const questions = [{
   message: "enter your project name: "
 },
 {
+  name: "table",
+  type: "input",
+  message: "enter table of Contents (Optional)"
+},
+{
   name: "description",
   type: "input",
   message: "what's your Description: "
@@ -39,8 +44,9 @@ const questions = [{
 },
 {
   name: "contributing",
-  type: "input",
-  message: "enter if you have any contributing name:"
+  type: "list",
+  message: "enter if you have any contributing name:",
+  choices: ["BSD","MIT","none"],
 },
 {
   name: "tests",
