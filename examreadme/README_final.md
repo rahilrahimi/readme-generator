@@ -1,7 +1,7 @@
 # ![license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
-   
+  readme-generator 
   ## Description
-  re
+  This is a README.md generator that You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
   ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,23 +9,23 @@
 - [License](#license)
 
 
-  re
+  this is optional
   ## installation
-  ere
+  open terminal and run this command (node index.js)
   ## Usage
-  re
+  this is example how its work
   ## Credits
-  er
+  none
   ## License
   (https://opensource.org/licenses/BSD-2-Clause)
   generator license
   ## Contributing
-  re
+  none
   ## Tests
-  er
+  this is a test
   ## questions
   Contact me:
 
-  Visit my Github at er
+  Visit my Github at rahilrahimi
 
-  If You have Questions? Email me at er
+  If You have Questions? Email me at example@gmail.com
