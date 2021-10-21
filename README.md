@@ -49,7 +49,6 @@ node index.js
 This application won’t be deployed, so I will provide a link to a walkthrough video that demonstrates its functionality.
 
 # link to a walkthrough video
-chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/858a9897-c01c-4110-y379-0e0c931662df
-
+https://watch.screencastify.com/v/gvZOTvtcydOzJv0rP3lx
 ## Contribution
 Made with ❤️ by [RAHIL.D]

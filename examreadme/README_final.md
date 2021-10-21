@@ -9,11 +9,11 @@
 - [License](#license)
 
 
-  this is optional
+  it is optional
   ## installation
-  open terminal and run this command (node index.js)
+  first open your teminal then use this command : node index.js
   ## Usage
-  this is example how its work
+  this is examples
   ## Credits
   none
   ## License
