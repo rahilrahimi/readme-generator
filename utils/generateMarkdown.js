@@ -11,13 +11,13 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'BSD') {
-    return `!(https://opensource.org/licenses/BSD-2-Clause)`
+    return `(https://opensource.org/licenses/BSD-2-Clause)`
   }
   if (license === 'MIT') {
-    return `!(https://opensource.org/licenses/MIT)`
+    return `(https://opensource.org/licenses/MIT)`
   }
   if (license === 'none') {
-    return `!(udifinded)`
+    return `(udifinded)`
   }
 }
 
@@ -32,7 +32,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${renderLicenseBadge`data.license`} ${data.title} 
+  return `# ${renderLicenseBadge(data.license)}
+  ${data.title} 
   ## Description
   ${data.description}
   ## Table of Contents 
@@ -50,7 +51,6 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credits}
   ## License
-  ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
   ## Contributing
@@ -59,11 +59,11 @@ function generateMarkdown(data) {
   ${data.tests}
   ## questions
   Contact me:
-  Visit my Github at ${data.github}.
-  If You have Questions? Email me at ${data.email}
 
+  Visit my Github at ${data.github}
+
+  If You have Questions? Email me at ${data.email}
 `;
 }
 
 module.exports = generateMarkdown;
-9

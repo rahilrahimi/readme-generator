@@ -1,6 +1,7 @@
-# ![license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg) F 
+# ![license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
+   
   ## Description
-  F
+  re
   ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -8,23 +9,23 @@
 - [License](#license)
 
 
-  F
+  re
   ## installation
-  F
+  ere
   ## Usage
-  F
+  re
   ## Credits
-  F
+  er
   ## License
-  ![license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
-  !(https://opensource.org/licenses/BSD-2-Clause)
+  (https://opensource.org/licenses/BSD-2-Clause)
   generator license
   ## Contributing
-  F
+  re
   ## Tests
-  F
+  er
   ## questions
   Contact me:
-  Visit my Github at F.
-  If You have Questions? Email me at F
 
+  Visit my Github at er
+
+  If You have Questions? Email me at er
