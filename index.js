@@ -39,14 +39,14 @@ const questions = [{
 },
 {
   name: "license",
-  type: "input",
-  message: "what's the license name :"
+  type: "list",
+  message: "what's the license name :",
+  choices: ["BSD", "MIT", "none"],
 },
 {
   name: "contributing",
-  type: "list",
+  type: "input",
   message: "enter if you have any contributing name:",
-  choices: ["BSD","MIT","none"],
 },
 {
   name: "tests",
@@ -54,17 +54,22 @@ const questions = [{
   message: "provide examples of tests:"
 },
 {
-  name: "questions",
+  name: "github",
   type: "input",
-  message: "link to your GitHub profile, and enter your email address instructions on how to reach you: "
+  message: "what is your GitHub profile: "
+},
+{
+  name: "email",
+  type: "input",
+  message: "enter your email address: "
 }];
 
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
   let markdownfile = generateMarkdown(data);
- return fs.writeFileSync(fileName, markdownfile, (error) => error? console.log(error): console.log("writen file"))
- }
+  return fs.writeFileSync(fileName, markdownfile, (error) => error ? console.log(error) : console.log("writen file"))
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -73,10 +78,8 @@ function init() {
     .then((answers) => {
       console.log(answers)
       console.log(answers.title)
-      writeFile("README_final.md", answers);
-      //call function to creat markdown file and give answers as a parameter
-      // let markdownfile = generateMarkdown(answers);
-      // fs.writeToFile("README_final.md", markdownfile, (error) => error? console.log(error): console.log("writen file"))
+      writeFile("./examreadme/README_final.md", answers);
+
       console.log("writen file")
     })
     .catch((error) => {

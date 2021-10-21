@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'none') {
-    return `![license](https://img.shields.io/badge/license-${license}-blue.svg)`
+    return `![license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)`
   }
 }
 
@@ -10,8 +10,14 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'none') {
-    return `![license](#license)`
+  if (license === 'BSD') {
+    return `!(https://opensource.org/licenses/BSD-2-Clause)`
+  }
+  if (license === 'MIT') {
+    return `!(https://opensource.org/licenses/MIT)`
+  }
+  if (license === 'none') {
+    return `!(udifinded)`
   }
 }
 
@@ -19,14 +25,14 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'none') {
-    return `this project use ${license} license`
+    return `generator license`
   }
   return ''
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${renderLicenseBadge`data.license`} ${data.title} 
   ## Description
   ${data.description}
   ## Table of Contents 
@@ -44,23 +50,20 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credits}
   ## License
-  ${data.license}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
   ## Contributing
   ${data.contributing}
   ## Tests
   ${data.tests}
   ## questions
-  ${data.questions}
+  Contact me:
+  Visit my Github at ${data.github}.
+  If You have Questions? Email me at ${data.email}
 
 `;
 }
-// function generateMarkdown(fileName, data) {
-//   FileSystem.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`, data, (err) =>{
-//     if(err) {
-//       console.log(err)
-//     }
-//     console.log('Your README has been generated');
-//   })
-// }
 
 module.exports = generateMarkdown;
+9
